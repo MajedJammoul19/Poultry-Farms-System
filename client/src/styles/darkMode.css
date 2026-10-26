@@ -1,0 +1,402 @@
+/* Dark Mode Global Styles - شأنا شامل للوضع الداكن */
+
+/* ========================================
+   الخلفيات والألوان الأساسية
+   ======================================== */
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #020617 !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .min-h-screen,
+html.dark .h-screen {
+  background-color: #020617 !important;
+}
+
+html.dark .flex.flex-col.min-h-screen {
+  background-image: linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%) !important;
+}
+
+/* ========================================
+   البطاقات والحاويات
+   ======================================== */
+
+html.dark .bg-white {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+}
+
+html.dark .bg-gradient-to-br.from-gray-50.via-gray-100.to-gray-200 {
+  background-image: linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%) !important;
+}
+
+html.dark .bg-gray-50,
+html.dark .bg-gray-100,
+html.dark .bg-gray-200 {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+}
+
+html.dark .bg-white\/30,
+html.dark .bg-white\/50 {
+  background-color: rgba(30, 41, 59, 0.3) !important;
+}
+
+html.dark .bg-gray-100\/50 {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+/* ========================================
+   النصوص والألوان
+   ======================================== */
+
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600 {
+  color: #e2e8f0 !important;
+}
+
+html.dark .text-gray-500,
+html.dark .text-gray-400 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-gray-300,
+html.dark .text-gray-200 {
+  color: #e2e8f0 !important;
+}
+
+/* ========================================
+   الحدود والفواصل
+   ======================================== */
+
+html.dark .border-gray-200,
+html.dark .border-gray-300,
+html.dark .border-gray-100 {
+  border-color: rgba(113, 113, 122, 0.5) !important;
+}
+
+html.dark .border-gray-50 {
+  border-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+/* ========================================
+   الأزرار والعناصر التفاعلية
+   ======================================== */
+
+html.dark .hover\:bg-gray-100,
+html.dark .hover\:bg-gray-50 {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+html.dark .hover\:border-gray-300 {
+  border-color: rgba(113, 113, 122, 0.8) !important;
+}
+
+html.dark .active\:bg-gray-100 {
+  background-color: rgba(30, 41, 59, 0.7) !important;
+}
+
+html.dark .active\:bg-gray-100:active {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+}
+
+/* ========================================
+   الظلال
+   ======================================== */
+
+html.dark .shadow-lg,
+html.dark .shadow-xl,
+html.dark .shadow-2xl {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* ========================================
+   الشريط العلوي والقوائم
+   ======================================== */
+
+html.dark header,
+html.dark nav {
+  background: linear-gradient(90deg, #0f172a, #1e293b, #0f172a) !important;
+}
+
+html.dark .bg-gradient-to-r.from-green-900.via-green-800.to-green-900 {
+  background-image: linear-gradient(90deg, #0f172a, #1e293b, #0f172a) !important;
+}
+
+/* ========================================
+   الرسائل والإشعارات (Toast)
+   ======================================== */
+
+html.dark .Toaster,
+html.dark [role="status"] {
+  background-color: #111827 !important;
+  color: #e2e8f0 !important;
+}
+
+/* ========================================
+   الجداول
+   ======================================== */
+
+html.dark table,
+html.dark tbody,
+html.dark tr {
+  background-color: #111827 !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark th,
+html.dark td {
+  border-color: rgba(113, 113, 122, 0.5) !important;
+}
+
+html.dark tr:hover {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+/* ========================================
+   المخطوطات والنماذج
+   ======================================== */
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(113, 113, 122, 0.5) !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  background-color: #1e293b !important;
+  border-color: rgba(113, 113, 122, 0.8) !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* ========================================
+   القائمة الجانبية (Sidebar)
+   ======================================== */
+
+html.dark .bg-gradient-to-b.from-green-900.via-green-800.to-green-900 {
+  background-image: linear-gradient(180deg, #0f172a, #1e293b, #0f172a) !important;
+}
+
+/* ========================================
+   المودالات والنافذ البوب أب
+   ======================================== */
+
+html.dark .fixed.inset-0.bg-black\/50 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+html.dark .bg-gradient-to-br.from-white.to-gray-50 {
+  background-image: linear-gradient(135deg, #111827, #0f172a) !important;
+}
+
+/* ========================================
+   شريط التمرير
+   ======================================== */
+
+html.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background-color: #1e293b;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #475569;
+  border-radius: 10px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+/* ========================================
+   العناصر الخاصة
+   ======================================== */
+
+html.dark .backdrop-blur-lg,
+html.dark .backdrop-blur-xl {
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+html.dark .bg-white\/95 {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+html.dark .bg-white\/90,
+html.dark .bg-white\/80 {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+html.dark .bg-white\/20,
+html.dark .bg-white\/10 {
+  background-color: rgba(30, 41, 59, 0.2) !important;
+}
+
+/* ========================================
+   بطاقات المعلومات والتنبيهات
+   ======================================== */
+
+html.dark .bg-blue-50,
+html.dark .bg-blue-100 {
+  background-color: rgba(30, 58, 138, 0.2) !important;
+}
+
+html.dark .bg-red-50,
+html.dark .bg-red-100 {
+  background-color: rgba(127, 29, 29, 0.2) !important;
+}
+
+html.dark .bg-green-50,
+html.dark .bg-green-100 {
+  background-color: rgba(20, 83, 45, 0.2) !important;
+}
+
+html.dark .bg-yellow-50,
+html.dark .bg-amber-50 {
+  background-color: rgba(78, 22, 6, 0.2) !important;
+}
+
+html.dark .text-blue-600,
+html.dark .text-red-600,
+html.dark .text-green-600,
+html.dark .text-yellow-600 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .text-blue-700,
+html.dark .text-red-700,
+html.dark .text-green-700 {
+  color: #e2e8f0 !important;
+}
+
+/* ========================================
+   تأثيرات إضافية
+   ======================================== */
+
+html.dark .group:hover .group-hover\:text-green-300 {
+  color: #cbd5e1 !important;
+}
+
+html.dark .group:hover .group-hover\:opacity-100 {
+  opacity: 0.8 !important;
+}
+
+html.dark .opacity-60,
+html.dark .opacity-80 {
+  opacity: 0.7 !important;
+}
+
+/* ========================================
+   العناصر المساعدة والخاصة
+   ======================================== */
+
+html.dark .bg-green-800\/30,
+html.dark .bg-green-800\/50 {
+  background-color: rgba(20, 83, 45, 0.3) !important;
+}
+
+html.dark .border-green-600\/30,
+html.dark .border-green-700\/40 {
+  border-color: rgba(22, 163, 74, 0.3) !important;
+}
+
+html.dark .text-green-100,
+html.dark .text-green-200 {
+  color: #dcfce7 !important;
+}
+
+html.dark .text-green-300,
+html.dark .text-green-50 {
+  color: #86efac !important;
+}
+
+/* ========================================
+   تحويل التنبيهات في الوضع الداكن
+   ======================================== */
+
+/* تحويل خلفيات التنبيهات */
+html.dark .bg-gradient-to-br.from-red-50.to-red-100 {
+  background-image: linear-gradient(135deg, #7f1d1d !important, #991b1b !important);
+}
+
+html.dark .bg-gradient-to-br.from-amber-50.to-amber-100 {
+  background-image: linear-gradient(135deg, #78350f !important, #92400e !important);
+}
+
+html.dark .bg-gradient-to-br.from-sky-50.to-sky-100 {
+  background-image: linear-gradient(135deg, #082f49 !important, #0c4a6e !important);
+}
+
+/* تحويل ألوان النصوص في التنبيهات */
+html.dark .text-red-800,
+html.dark .text-amber-800,
+html.dark .text-sky-800 {
+  color: #fecaca !important;
+}
+
+html.dark .text-red-600,
+html.dark .text-amber-600,
+html.dark .text-sky-600 {
+  color: #fca5a5 !important;
+}
+
+/* تحويل خلفيات البادجات */
+html.dark .bg-red-100 {
+  background-color: #7f1d1d !important;
+}
+
+html.dark .bg-amber-100 {
+  background-color: #78350f !important;
+}
+
+html.dark .bg-sky-100 {
+  background-color: #082f49 !important;
+}
+
+/* تحويل ألوان البادجات */
+html.dark .text-red-600 {
+  color: #fecaca !important;
+}
+
+html.dark .text-amber-600 {
+  color: #fed7aa !important;
+}
+
+html.dark .text-sky-600 {
+  color: #bae6fd !important;
+}
+
+/* تحويل شريط التقدم للتنبيهات العالية */
+html.dark .bg-red-200 {
+  background-color: #7f1d1d !important;
+}
+
+html.dark .bg-red-500 {
+  background-color: #ef4444 !important;
+}
+
+/* تحويل وقت التنبيه */
+html.dark .bg-white\/70 {
+  background-color: #1e293b !important;
+}
+
+html.dark .text-gray-500 {
+  color: #94a3b8 !important;
+}

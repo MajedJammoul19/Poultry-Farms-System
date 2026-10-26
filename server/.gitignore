@@ -1,0 +1,197 @@
+# Dependencies (التبعيات)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables (متغيرات البيئة)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs (سجلات النظام)
+logs/
+*.log
+access.log
+error.log
+combined.log
+
+# Database (قاعدة البيانات)
+*.db
+*.sqlite
+*.sqlite3
+*.mongodb
+data/
+database/
+
+# Uploads and temporary files (الملفات المرفوعة والمؤقتة)
+uploads/
+temp/
+tmp/
+*.tmp
+*.temp
+files/
+images/
+public/uploads/
+
+# Config files (ملفات الإعدادات)
+config/local.js
+config/development.js
+config/production.js
+config/*.local.js
+
+# SSL certificates (شهادات SSL)
+*.pem
+*.key
+*.crt
+*.cert
+
+# Authentication (مصادقة)
+*.jwt
+*.token
+secrets.json
+private.key
+public.key
+
+# Backup files (ملفات النسخ الاحتياطي)
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*~
+
+# IDE files (ملفات المحرر)
+.vscode/
+.idea/
+*.sublime-*
+.project
+.classpath
+*.code-workspace
+
+# OS files (ملفات نظام التشغيل)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Testing (اختبارات)
+coverage/
+.nyc_output/
+test/reports/
+*.test.js
+*.spec.js
+
+# Docker (إذا كنت تستخدم Docker)
+docker-compose.override.yml
+Dockerfile.dev
+.dockerignore
+
+# PM2 (إذا كنت تستخدم PM2)
+pm2.json
+pm2-dev.json
+.pm2/
+
+# Redis (ذاكرة التخزين المؤقت)
+dump.rdb
+redis.log
+
+# MongoDB
+mongodb.log
+mongod.log
+
+# Nginx (إذا كنت تستخدم Nginx)
+nginx.conf
+*.nginx.conf
+
+# API documentation (توثيق API)
+apidoc/
+docs/api/
+swagger.json
+
+# Reports (تقارير)
+reports/
+*.pdf
+*.csv
+*.xlsx
+
+# Compression (ملفات مضغوطة)
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Process files (ملفات العمليات)
+pid.lock
+.pid
+
+# Session files (ملفات الجلسات)
+sessions/
+*.session
+
+# Cache (ذاكرة التخزين المؤقت)
+.cache/
+cache/
+*.cache
+
+# Typescript (ملفات TypeScript المترجمة)
+*.js.map
+*.d.ts.map
+dist/
+build/
+out/
+
+# Elasticsearch (إذا كنت تستخدم Elasticsearch)
+elasticsearch/
+*.log
+
+# Kafka (إذا كنت تستخدم Kafka)
+kafka-logs/
+
+# Custom directories (مجلدات مخصصة)
+logs/
+storage/
+temp/
+uploads/
+files/
+images/
+videos/
+
+# Security (أمان)
+security/
+keys/
+secrets/
+*.secret
+
+# Development specific (خاص بالتطوير)
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Configuration files (ملفات الإعدادات التي تختلف بين البيئات)
+config/local.js
+config/development.js
+config/staging.js
+
+# API keys (مفاتيح API)
+apikey.txt
+*.apikey
+
+# Database migration (ترحيل قاعدة البيانات)
+migrations/*.sql
+migrations/*.js
+
+# Cron jobs jobs (مهام مجدولة)
+cron.log
+cron.pid

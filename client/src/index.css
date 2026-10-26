@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* Drawer جانبي */
+@keyframes slideInDrawer {
+  from { transform: translateX(110%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes progress {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-progress {
+  animation: progress 5s linear forwards;
+}
+
+/* Custom scrollbar for glass components */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+/* Glass morphism backdrop blur support for all browsers */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+:root {
+  color-scheme: light;
+  --page-bg: #f8fafc;
+  --panel-bg: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --border-muted: #e5e7eb;
+}
+
+.dark {
+  color-scheme: dark;
+  --page-bg: #020617;
+  --panel-bg: #111827;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --border-muted: #334155;
+}
+
+html.dark body {
+  background-color: var(--page-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark .bg-white {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+}
+
+html.dark .bg-gray-50,
+html.dark .bg-gray-100,
+html.dark .bg-gray-200,
+html.dark .bg-gray-300,
+html.dark .bg-gray-100\/50,
+html.dark .bg-white\/30,
+html.dark .bg-white\/50 {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+html.dark .text-gray-900,
+html.dark .text-gray-800,
+html.dark .text-gray-700,
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+  color: var(--text-primary) !important;
+}
+
+html.dark .border-gray-200,
+html.dark .border-gray-300,
+html.dark .border-gray-100,
+html.dark .border-gray-50 {
+  border-color: rgba(148, 163, 184, 0.24) !important;
+}
+
+html.dark .role-badge {
+  color: #0f172a !important;
+}
+
+html.dark .fuel-info-box {
+  background-color: rgba(30, 27, 75, 0.4) !important;
+  border-color: rgba(99, 102, 241, 0.3) !important;
+  color: #c7d2fe !important;
+}
+
+html.dark .supplier-selector-box {
+  background-color: rgba(40, 20, 5, 0.55) !important;
+  border-color: rgba(251, 146, 60, 0.28) !important;
+}
+
+html.dark .supplier-selector-box label {
+  color: #fdba74 !important;
+}
+
+html.dark .supplier-select {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+  border-color: rgba(251, 146, 60, 0.35) !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .supplier-select option {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+html.dark .supplier-info-card {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  border-color: rgba(251, 146, 60, 0.25) !important;
+}
+
+html.dark .supplier-no-data {
+  color: #fdba74 !important;
+}
+
+html.dark .bg-gradient-to-br.from-gray-50.via-gray-100.to-gray-200 {
+  background-image: linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%) !important;
+}
+
+html.dark .bg-gradient-to-br.from-green-100.to-emerald-100,
+html.dark .bg-gradient-to-br.from-green-100.to-green-100 {
+  background-image: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(15, 23, 42, 0.22)) !important;
+}
